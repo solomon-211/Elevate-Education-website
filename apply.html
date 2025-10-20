@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apply for Scholarship Guidance — Elevate Education Foundation</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="title" href="index.html">Elevate Education Foundation</a>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="program.html">Programs</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="apply.html" class="apply-btn active">Apply Now</a></li>
+                <li><a href="donate.html" class="apply-btn active">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="apply-hero">
+            <div class="container">
+                <h1>Apply for Scholarship Guidance Program</h1>
+                <p>Take the first step towards your dream university. Our team will guide you through the entire scholarship application process.</p>
+            </div>
+        </section>
+
+        <section class="container" style="margin-top: 3rem;">
+            <div class="apply-info-box">
+                <h2>What You'll Get</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <span class="benefit-icon">🎯</span>
+                        <h3>Personalized Guidance</h3>
+                        <p>One-on-one mentorship throughout your application journey</p>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">📚</span>
+                        <h3>Academic Preparation</h3>
+                        <p>SAT/TOEFL/IELTS prep and academic writing skills</p>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">✍️</span>
+                        <h3>Essay Support</h3>
+                        <p>Help crafting compelling personal statements and essays</p>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">🌍</span>
+                        <h3>University Matching</h3>
+                        <p>Connect with universities offering full scholarships</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eligibility-box">
+                <h2>Eligibility Requirements</h2>
+                <ul>
+                    <li>Strong academic performance (minimum B average or equivalent)</li>
+                    <li>Demonstrated leadership qualities and community involvement</li>
+                    <li>Financial need (priority given to underprivileged students and refugees)</li>
+                    <li>Commitment to returning value to your community</li>
+                    <li>Currently completing secondary education or recent graduate</li>
+                </ul>
+                <p style="margin-top: 1rem; color: #555; font-style: italic;">We particularly encourage applications from girls, refugees, and students from marginalized communities.</p>
+            </div>
+        </section>
+
+        <section class="container" style="margin-top: 2rem;">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Scholarship Application Form</h2>
+            
+            <form id="applyForm" class="apply-form">
+                <!-- Personal Information -->
+                <div class="form-section">
+                    <h3>Personal Information</h3>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dateOfBirth">Date of Birth *</label>
+                            <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender *</label>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                                <option value="prefer-not-say">Prefer not to say</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label for="nationality">Nationality *</label>
+                    <input type="text" id="nationality" name="nationality" required>
+
+                    <label for="currentLocation">Current Location (City, Country) *</label>
+                    <input type="text" id="currentLocation" name="currentLocation" required placeholder="e.g., Juba, South Sudan">
+
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="refugeeStatus" id="refugeeStatus">
+                            <span>I am a refugee or displaced person</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="form-section">
+                    <h3>Contact Information</h3>
+
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+
+                    <label for="phone">Phone Number (with country code) *</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="+211 XXX XXX XXX">
+
+                    <label for="whatsapp">WhatsApp Number (if different)</label>
+                    <input type="tel" id="whatsapp" name="whatsapp" placeholder="+211 XXX XXX XXX">
+
+                    <label for="address">Home Address *</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+
+                <!-- Educational Background -->
+                <div class="form-section">
+                    <h3>Educational Background</h3>
+
+                    <label for="currentEducation">Current Education Level *</label>
+                    <select id="currentEducation" name="currentEducation" required>
+                        <option value="">Select</option>
+                        <option value="secondary-student">Current Secondary School Student</option>
+                        <option value="secondary-graduate">Secondary School Graduate</option>
+                        <option value="college-student">Current College/University Student</option>
+                        <option value="college-graduate">College/University Graduate</option>
+                    </select>
+
+                    <label for="schoolName">Name of Current/Most Recent School *</label>
+                    <input type="text" id="schoolName" name="schoolName" required>
+
+                    <label for="graduationYear">Expected/Actual Graduation Year *</label>
+                    <input type="number" id="graduationYear" name="graduationYear" required min="2020" max="2030">
+
+                    <label for="gpa">GPA or Average Grade *</label>
+                    <input type="text" id="gpa" name="gpa" required placeholder="e.g., 3.8/4.0 or 85%">
+
+                    <label for="subjects">Main Subjects/Areas of Study *</label>
+                    <input type="text" id="subjects" name="subjects" required placeholder="e.g., Mathematics, Sciences, Languages">
+
+                    <label for="achievements">Academic Achievements & Awards</label>
+                    <textarea id="achievements" name="achievements" rows="4" placeholder="List any academic awards, competitions, or recognition you've received"></textarea>
+                </div>
+
+                <!-- Intended Field of Study -->
+                <div class="form-section">
+                    <h3>Intended Field of Study</h3>
+
+                    <label for="intendedField">What do you want to study? *</label>
+                    <select id="intendedField" name="intendedField" required>
+                        <option value="">Select a field</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="medicine">Medicine & Health Sciences</option>
+                        <option value="computer-science">Computer Science & IT</option>
+                        <option value="business">Business & Economics</option>
+                        <option value="education">Education</option>
+                        <option value="sciences">Natural Sciences</option>
+                        <option value="social-sciences">Social Sciences</option>
+                        <option value="humanities">Humanities & Arts</option>
+                        <option value="law">Law</option>
+                        <option value="agriculture">Agriculture</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="careerGoals">Career Goals (Why do you want to study this?) *</label>
+                    <textarea id="careerGoals" name="careerGoals" rows="5" required placeholder="Tell us about your career aspirations and why you chose this field"></textarea>
+
+                    <label for="universityPreferences">Preferred Countries/Regions for Study</label>
+                    <input type="text" id="universityPreferences" name="universityPreferences" placeholder="e.g., East Africa, North America, Europe">
+                </div>
+
+                <!-- Leadership & Community Involvement -->
+                <div class="form-section">
+                    <h3>Leadership & Community Involvement</h3>
+
+                    <label for="leadershipRoles">Leadership Positions Held</label>
+                    <textarea id="leadershipRoles" name="leadershipRoles" rows="4" placeholder="List any leadership roles in school, community, or organizations"></textarea>
+
+                    <label for="communityService">Community Service & Volunteering *</label>
+                    <textarea id="communityService" name="communityService" rows="5" required placeholder="Describe your involvement in community service and volunteer activities"></textarea>
+
+                    <label for="extracurricular">Extracurricular Activities</label>
+                    <textarea id="extracurricular" name="extracurricular" rows="4" placeholder="Sports, clubs, arts, music, or other activities"></textarea>
+                </div>
+
+                <!-- Financial Information -->
+                <div class="form-section">
+                    <h3>Financial Information</h3>
+
+                    <label for="familyIncome">Family Annual Income (Approximate) *</label>
+                    <select id="familyIncome" name="familyIncome" required>
+                        <option value="">Select range</option>
+                        <option value="0-500">$0 - $500</option>
+                        <option value="500-1000">$500 - $1,000</option>
+                        <option value="1000-2000">$1,000 - $2,000</option>
+                        <option value="2000-5000">$2,000 - $5,000</option>
+                        <option value="5000+">Above $5,000</option>
+                    </select>
+
+                    <label for="familySize">Number of People in Household *</label>
+                    <input type="number" id="familySize" name="familySize" required min="1">
+
+                    <label for="siblings">Number of Siblings in School/College</label>
+                    <input type="number" id="siblings" name="siblings" min="0">
+
+                    <label for="financialChallenges">Describe Your Financial Situation *</label>
+                    <textarea id="financialChallenges" name="financialChallenges" rows="5" required placeholder="Explain why you need scholarship support"></textarea>
+                </div>
+
+                <!-- Personal Statement -->
+                <div class="form-section">
+                    <h3>Personal Statement</h3>
+
+                    <label for="personalStory">Your Story (500-1000 words) *</label>
+                    <textarea id="personalStory" name="personalStory" rows="10" required placeholder="Tell us about yourself: your background, challenges you've overcome, what motivates you, and how a scholarship would impact your life and community"></textarea>
+
+                    <label for="returnPlan">How will you give back to your community? *</label>
+                    <textarea id="returnPlan" name="returnPlan" rows="5" required placeholder="Describe your plans to contribute to your community after completing your education"></textarea>
+                </div>
+
+                <!-- Additional Information -->
+                <div class="form-section">
+                    <h3>Additional Information</h3>
+
+                    <label for="englishProficiency">English Proficiency Level *</label>
+                    <select id="englishProficiency" name="englishProficiency" required>
+                        <option value="">Select</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                        <option value="native">Native/Fluent</option>
+                    </select>
+
+                    <label for="standardizedTests">Have you taken any standardized tests? (SAT, TOEFL, IELTS, etc.)</label>
+                    <textarea id="standardizedTests" name="standardizedTests" rows="3" placeholder="List test names and scores if applicable"></textarea>
+
+                    <label for="referees">References (Name, Position, Contact) *</label>
+                    <textarea id="referees" name="referees" rows="5" required placeholder="Provide at least 2 references (teachers, mentors, community leaders)&#10;Example: John Doe, Mathematics Teacher, johndoe@email.com, +211XXXXXXXXX"></textarea>
+
+                    <label for="hearAboutUs">How did you hear about our program? *</label>
+                    <select id="hearAboutUs" name="hearAboutUs" required>
+                        <option value="">Select</option>
+                        <option value="school">Through my school</option>
+                        <option value="friend">Friend or family member</option>
+                        <option value="social-media">Social media</option>
+                        <option value="community">Community organization</option>
+                        <option value="website">Website search</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="additionalInfo">Any Additional Information</label>
+                    <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Is there anything else you'd like us to know?"></textarea>
+                </div>
+
+                <!-- Terms and Conditions -->
+                <div class="form-section">
+                    <div class="terms-box">
+                        <h3>Terms and Conditions</h3>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="termsAccuracy" id="termsAccuracy" required>
+                                <span>I confirm that all information provided is accurate and truthful *</span>
+                            </label>
+                        </div>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="termsCommitment" id="termsCommitment" required>
+                                <span>I commit to the scholarship guidance program and will actively participate in all sessions *</span>
+                            </label>
+                        </div>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="termsContact" id="termsContact" required>
+                                <span>I agree to be contacted by Elevate Education Foundation regarding my application *</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-application-btn">Submit Application</button>
+                    
+                    <p style="text-align: center; color: #666; margin-top: 1rem; font-size: 0.95rem;">
+                        After submission, you'll receive a confirmation email. Our team will review your application and contact you within 2 weeks.
+                    </p>
+                </div>
+            </form>
+
+            <div id="applyFormStatus"></div>
+        </section>
+
+        <section class="container" style="margin: 3rem auto;">
+            <div class="application-tips-box">
+                <h2>Application Tips</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h3>📝 Be Honest</h3>
+                        <p>Authenticity matters more than perfection. Share your real story and challenges.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>💡 Show Passion</h3>
+                        <p>Demonstrate genuine interest in your chosen field and clear goals for the future.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>🌟 Highlight Impact</h3>
+                        <p>Emphasize how education will help you contribute to your community.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>✅ Proofread</h3>
+                        <p>Check for spelling and grammar errors before submitting your application.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" style="margin-bottom: 4rem;">
+            <div class="help-box">
+                <h2>Need Help with Your Application?</h2>
+                <p>If you have questions or need assistance completing this form, please don't hesitate to contact us:</p>
+                <div style="margin-top: 1.5rem;">
+                    <p><strong>Email:</strong> <a href="mailto:scholarships@elevateeducation.org">scholarships@elevateeducation.org</a></p>
+                    <p><strong>Phone:</strong>+250795598545</p>
+                    <p><strong>WhatsApp:</strong> +211925277700</p>
+                </div>
+                <p style="margin-top: 1rem;">We offer application support sessions every Saturday. <a href="contact.html">Contact us</a> to schedule an appointment.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Elevate Education Foundation. All rights reserved.</p>
+        <nav class="footer-nav">
+            <a href="privacy.html">Privacy</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
