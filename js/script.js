@@ -835,9 +835,26 @@ if (applyForm) {
     document.getElementById('progressFill').style.width = progress + '%';
     document.getElementById('progressText').textContent = Math.round(progress) + '%';
   }
-  
+
+  // Update progress on form section change
+  formSections.forEach(section => {
+    section.addEventListener('change', updateProgress);
+  });
+
+  /* --- Hamburger Icon --- */
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-menu');
+
+  if (hamburger) {
+    hamburger.addEventListener('click', function() {
+      this.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+  }
+
   // Initial progress update
   updateProgress();
 }
 
 console.log('Apply form JavaScript loaded successfully');
+

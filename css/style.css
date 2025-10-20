@@ -66,6 +66,61 @@ body {
   color: #004aad;
 }
 
+/* --- Hamburger Icon --- */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    background: #004aad;
+    border-radius: 8px;
+    padding: 1rem 0;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu li {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+}
+
+.hamburger.active div:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active div:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.hamburger.active div:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
 /* ===============================
    HERO SECTION
 ================================== */
@@ -1601,39 +1656,6 @@ select:focus-visible {
     border-width: 3px;
   }
 }
-
-/* /* Dark mode support (optional)
-   Uncomment to enable dark mode */
-/* @media (prefers-color-scheme: dark) {
-  body {
-    background-color: #d9cc10;
-    color: #e0e0e0;
-  }
-
-  .features article,
-  .stat,
-  form,
-  .contact-info-box,
-  .connection-card,
-  .faq-item {
-    background: #c9cc09;
-    color: #e0e0e0;
-  }
-
-  form input,
-  form textarea,
-  form select {
-    background: #3a3a3a;
-    color: #e0e0e0;
-    border-color: #555;
-  } */
-/* } */ */
- 
-
-
-/* ===============================
-   END OF STYLESHEET
-==================================
 
 /* ===============================
    APPLY BUTTON IN NAVIGATION
