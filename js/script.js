@@ -841,15 +841,11 @@ if (applyForm) {
     section.addEventListener('change', updateProgress);
   });
 
-  /* --- Hamburger Icon --- */
-  const hamburger = document.querySelector('.hamburger');
-  const navMenu = document.querySelector('.nav-menu');
-
-  if (hamburger) {
-    hamburger.addEventListener('click', function() {
-      this.classList.toggle('active');
-      navMenu.classList.toggle('active');
-    });
+  function toggleMenu() {
+    const menu = document.querySelector('.nav-menu');
+    const hamburger = document.querySelector('.hamburger');
+    menu.classList.toggle('active');
+    hamburger.classList.toggle('active');
   }
 
   // Initial progress update

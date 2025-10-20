@@ -26,74 +26,84 @@ body {
 /* ===============================
    HEADER & NAVIGATION
 ================================== */
+/* --- BASIC RESET --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* --- HEADER --- */
 .site-header {
-  background: #004aad;
-  color: #fff;
-  padding: 1rem 2rem;
+  background-color: #004aad;
+  color: white;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  align-items: center;
+  padding: 15px 25px;
+  position: relative;
 }
 
+/* --- SITE TITLE --- */
 .site-header .title {
-  color: #fff;
-  font-size: 1.4rem;
+  color: white;
   text-decoration: none;
-  font-weight: 700;
-  letter-spacing: 0.5px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
+/* --- NAV MENU --- */
 .nav-menu {
   list-style: none;
   display: flex;
-  gap: 1.2rem;
+  gap: 20px;
 }
 
 .nav-menu li a {
-  color: #fff;
+  color: white;
   text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s ease;
-  padding: 6px 12px;
-  border-radius: 6px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: 0.3s;
 }
 
 .nav-menu li a:hover,
 .nav-menu li a.active {
-  background: #fff;
-  color: #004aad;
+  background-color: #007bff;
 }
 
-/* --- Hamburger Icon --- */
+/* --- HAMBURGER ICON --- */
 .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  gap: 5px;
 }
 
 .hamburger div {
-  width: 25px;
+  width: 28px;
   height: 3px;
   background-color: #fff;
-  margin: 4px 0;
-  transition: 0.4s;
+  border-radius: 2px;
+  transition: 0.3s;
 }
 
+/* --- MOBILE STYLES --- */
 @media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
-
   .nav-menu {
     display: none;
     flex-direction: column;
+    position: absolute;
+    top: 65px;
+    left: 0;
     width: 100%;
-    margin-top: 1rem;
     background: #004aad;
-    border-radius: 8px;
-    padding: 1rem 0;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   }
 
   .nav-menu.active {
@@ -102,10 +112,31 @@ body {
 
   .nav-menu li {
     text-align: center;
-    margin: 0.5rem 0;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .nav-menu li:last-child {
+    border-bottom: none;
+  }
+
+  .hamburger {
+    display: flex;
   }
 }
 
+  /* --- Animate Hamburger to "X" when active --- */
+  .hamburger.active div:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+
+  .hamburger.active div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active div:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
 /* ===============================
    HERO SECTION
 ================================== */
