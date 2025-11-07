@@ -75,74 +75,27 @@ body {
 .nav-menu li a.active {
   background-color: #007bff;
 }
+.dropdown {
+  position: relative;
+}
 
-/* --- HAMBURGER ICON --- */
-.hamburger {
+.dropdown-menu {
   display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #004aad;
+  list-style: none;
+  padding: 10px 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-.hamburger div {
-  width: 28px;
-  height: 3px;
-  background-color: #fff;
-  border-radius: 2px;
-  transition: 0.3s;
-}
-
-/* --- MOBILE STYLES --- */
-@media (max-width: 768px) {
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 65px;
-    left: 0;
-    width: 100%;
-    background: #004aad;
-    border-radius: 0 0 8px 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  }
-
-  .nav-menu.active {
-    display: flex;
-  }
-
-  .nav-menu li {
-    text-align: center;
-    padding: 0.8rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  }
-
-  .nav-menu li:last-child {
-    border-bottom: none;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-}
-
-  /* --- Animate Hamburger to "X" when active --- */
-  .hamburger.active div:nth-child(1) {
-    transform: rotate(45deg) translateY(8px);
-  }
-
-  .hamburger.active div:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active div:nth-child(3) {
-    transform: rotate(-45deg) translateY(-8px);
-  }
 /* ===============================
    HERO SECTION
 ================================== */
 .hero {
-  background: linear-gradient(rgba(0, 74, 173, 0.8), rgba(0, 74, 173, 0.8)),
-              url("../images/hero-bg.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(200, 203, 208, 0.548), rgba(200, 203, 208, 0.548)),
+              url("../images/background.jpg") center/cover no-repeat;
   color: #fff;
   text-align: center;
   padding: 6rem 1rem;
@@ -935,7 +888,11 @@ article h3 {
 
 /* FAQ Hero Section */
 .faq-hero {
-  background: linear-gradient(135deg, #004aad 0%, #0066cc 100%);
+  background-image: linear-gradient(135deg, #4874e4 0%, #4874e4 100%),
+                    url("../images/");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #fff;
   text-align: center;
   padding: 4rem 1rem 3rem;
@@ -945,7 +902,8 @@ article h3 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   font-weight: 700;
-  color: #fff;
+  color: #bdb714;
+  font-size: 2.5rem;
 }
 
 .faq-hero > .container > p {

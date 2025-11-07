@@ -841,16 +841,13 @@ if (applyForm) {
     section.addEventListener('change', updateProgress);
   });
 
-  function toggleMenu() {
-    const menu = document.querySelector('.nav-menu');
-    const hamburger = document.querySelector('.hamburger');
-    menu.classList.toggle('active');
-    hamburger.classList.toggle('active');
-  }
-
   // Initial progress update
   updateProgress();
 }
 
 console.log('Apply form JavaScript loaded successfully');
 
+function showSidebar() {
+  const sidebar = document.querySelector('.sidebar-menu');
+  sidebar.style.display = 'flex';
+}
